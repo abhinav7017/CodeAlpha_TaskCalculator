@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<main class="calculator" aria-label="Calculator">
+			<div class="display" role="region" aria-live="polite">
+				<div id="expression" class="expression">0</div>
+				<div id="preview" class="preview">= 0</div>
+			</div>
+
+			<div class="buttons" role="group" aria-label="Calculator buttons">
+				<button class="btn btn-fn" data-action="all-clear" title="All Clear">AC</button>
+				<button class="btn btn-fn" data-action="clear" title="Clear Entry">C</button>
+				<button class="btn btn-fn" data-action="backspace" title="Backspace">⌫</button>
+				<button class="btn btn-op" data-value="/" title="Divide">÷</button>
+
+				<button class="btn" data-value="7">7</button>
+				<button class="btn" data-value="8">8</button>
+				<button class="btn" data-value="9">9</button>
+				<button class="btn btn-op" data-value="*" title="Multiply">×</button>
+
+				<button class="btn" data-value="4">4</button>
+				<button class="btn" data-value="5">5</button>
+				<button class="btn" data-value="6">6</button>
+				<button class="btn btn-op" data-value="-" title="Subtract">−</button>
+
+				<button class="btn" data-value="1">1</button>
+				<button class="btn" data-value="2">2</button>
+				<button class="btn" data-value="3">3</button>
+				<button class="btn btn-op" data-value="+" title="Add">+</button>
+
+				<button class="btn" data-value="0">0</button>
+				<button class="btn" data-value=".">.</button>
+				<button class="btn" data-value="%" title="Modulo">%</button>
+				<button class="btn btn-eq" data-action="equals" title="Equals">=</button>
+			</div>
+		</main>
+
+		<script src="app.js"></script>
+	</body>
+</html>
